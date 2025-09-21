@@ -40,7 +40,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState("");
   
-  const router = useRouter(); // Initialize useRouter
+  const router = useRouter('www.google.com'); // Initialize useRouter
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { id, value } = e.target;
